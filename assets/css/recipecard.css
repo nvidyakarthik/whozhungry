@@ -12,11 +12,14 @@ h5 {
 
 .card {
     font-size: 1em;
-    overflow: hidden;
+    overflow: hidden;    
     padding: 0;
     border: none;
     border-radius: .28571429rem;
-    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width:245px;
+    display: inline-block;
+    margin:30px;
 }
 
 .card-block {
