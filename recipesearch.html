@@ -9,54 +9,12 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/cssjava.js"></script>
     <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-
-        .row.content {
-            height: 572px
-        }
-
-        /* Set gray background color and 100% height */
-
-        .sidenav {
-            padding-top: 20px;
-            background: linear-gradient(black, rgb(1, 1, 97));
-            height: 100%;
-
-        }
-
-        /* Set black background color, white text and some padding */
-
-        footer {
-            background: linear-gradient(rgb(1, 1, 97), black);
-            color: white;
-            padding: 15px;
-            text-shadow: 3px 3px 3px #000;
-            font-size: 16px;
-        }
-
-        /* On small screens, set height to 'auto' for sidenav and grid */
-
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-            .row.content {
-                height: auto;
-            }
-        }
+        
     </style>
 </head>
 
@@ -98,7 +56,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center" style= "background: linear-gradient(black, rgb(1, 1, 97))">
         <div class="row content">
             <div class="col-sm-2 sidenav">
                 <p>
@@ -107,17 +65,17 @@
                     </a>
                 </p>
                 <p>
-                    <a href="recipesearch.html" class="icon glass">
-                        <strong>Use What You Got</strong>
+                    <a href="recipesearch.html" id = "recipes" class="icon glass">
+                        <strong>Recipes</strong>
                     </a>
                 </p>
                 <p>
-                    <a href="pickup.html" class="icon glass">
+                    <a href="pickup.html" id = "pickUp" class="icon glass">
                         <strong>Pick UP</strong>
                     </a>
                 </p>
                 <p>
-                    <a href="community.html" class="icon glass">
+                    <a href="community.html" id = "community" class="icon glass">
                         <strong>Community</strong>
                     </a>
                 </p>
@@ -127,12 +85,12 @@
 
 
                     <div class="row">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">
+                        
+                            
+                                <h3 class="panel-title fontChange">
                                     <strong>Add What You Got</strong>
                                 </h3>
-                            </div>
+                            
                             <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                       <button class="btn btn-outline-secondary glass" type="button">Button</button>
@@ -143,7 +101,7 @@
                                 <table class="table table-hover" id='employee-table'>
                                     <thead>
                                         <tr>
-                                            <th>Ingredients</th>
+                                            <th class = "fontChange">Ingredients</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -152,7 +110,7 @@
                             </div>
                             </table>
 
-                        </div>
+                        
                     </div>
                     <div class="row">
                         <div id="recipe-list"></div>
