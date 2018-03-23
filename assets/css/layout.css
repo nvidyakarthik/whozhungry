@@ -41,6 +41,19 @@
     }
   }
 */
+
+#recipes{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+#pickUp{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#community{
+    padding-right:13px;
+    padding-left:13px;
+}
   .glass{
 	/* background styles */
 	position: relative;
@@ -73,4 +86,47 @@
     4px 6px 1px #400000, 4px 8px 1px #500000; /*......and so on, until 4px 60px 5px #FF0000; */
     font-size: 25px;
 }
- 
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+    height: 572px;
+}
+
+/* Set gray background color and 100% height */
+
+.sidenav {
+    padding-top: 20px;
+    background: linear-gradient(black, rgb(1, 1, 97));
+    height: 100%;
+
+}
+
+/* Set black background color, white text and some padding */
+
+footer {
+    background: linear-gradient(rgb(1, 1, 97), black);
+    color: white;
+    padding: 15px;
+    text-shadow: 3px 3px 3px #000;
+    font-size: 16px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
