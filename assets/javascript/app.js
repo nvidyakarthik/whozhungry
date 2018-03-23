@@ -1,4 +1,7 @@
 
+$(".icon glass").hover(function(){
+    $(this).css("animated shake");
+}
 
 
   // Initialize Firebase
