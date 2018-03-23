@@ -11,28 +11,22 @@
   var database = firebase.database();
  //function to add donations. pushes data in firebase
   $("#myModalHorizontal").on("click","#add-donations", function (event) {
-    var addItemName = $("#itemName").val().trim();
-    var addQuantity = $("#quantity").val().trim();
-    var addStreetName = $("#streetName").val().trim();
+    var addtitle = $("#title").val().trim();
+    var addMessage = $("#message").val().trim();
     var addCity = $("#city").val().trim();
     var addZipCode = $("#zipCode").val().trim();
-    var addPhoneNumber = $("#phoneNumber").val().trim();
     var addExpirationDate = $("#expirationDate").val().trim();
     database.ref("/Donations").push({
-        itemName:addItemName,
-        quantity:addQuantity,
-        streetName:addStreetName,
+        title:addtitle,
+        message:addMessage,
         city:addCity,
         zipcode:addZipCode,
-        phoneNumber:addPhoneNumber,
         expirateDate:addExpirationDate
   });
-  $("#itemName").val("");
-  $("#quantity").val("");
-  $("#streetName").val("");
+  $("#title").val("");
+  $("#message").val("");
   $("#city").val("");
   $("#zipCode").val("");
-  $("#phoneNumber").val("");
   $("#expirationDate").val("");
   $('#myModalHorizontal').modal('hide');
 
