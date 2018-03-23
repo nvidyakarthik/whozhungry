@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+#recipeSearch .container {
+    max-width: 925px;
+}
+/************ fix to increase the height of side div**********/
+.container-fluid {
+    overflow: hidden;
+}
+.sidenav {
+    margin-bottom: -1400px;
+    padding-bottom: 1400px;
+}
+/**************************************************************/
+
+=======
 #addButton{
     float: left;
 }
@@ -74,3 +89,4 @@
     font-size: 25px;
 }
  
+>>>>>>> c35529daec430607b9b71aaf9b0e8b2202b38c46
