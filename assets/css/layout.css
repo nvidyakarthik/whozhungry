@@ -3,7 +3,13 @@
 }
 
 .navbar{
-    background: linear-gradient(#ff7A00);
+    background-color: #92A097;
+    border-color: #92A097;
+    border-width: 2px;
+    border-bottom-color: #3e4444;
+    border-top-color: #3e4444;
+    border-left-color: #3e4444;
+    border-right-color: #3e4444;
 }
 .panel-heading{
     background-color: #ff7A00;
@@ -60,7 +66,7 @@
 	display: inline-block;
 	padding: 10px 15px;
 	background-color: green; /*for compatibility with older browsers*/
-	background-image: linear-gradient(#ff7A00, tan);
+	background-color:#EAD9C7;
 
 	/* text styles */
 	text-decoration: none;
@@ -90,6 +96,7 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
 
 .navbar {
+
     margin-bottom: 0;
     border-radius: 0;
 }
@@ -104,7 +111,7 @@
 
 .sidenav {
     padding-top: 20px;
-    background: linear-gradient(#ff7A00, tan);
+    background-color:#BAAC9E;
     height: 100%;
 
 }
@@ -164,4 +171,16 @@ footer {
  #solo-card{
 
  }
- 
+ .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+     background-color: #92A097;
+     color: #3e4444;
+ }
+ .navbar-inverse .navbar-nav>li>a {
+     color: #3e4443;
+ }
+ .navbar-inverse .navbar-brand{
+     color: #3e4443;
+ }
+ element.style{
+     background-color: #BAAC9E;
+ }
