@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>RecipeSearch-Use what you got</title>
   <meta charset="utf-8">
@@ -8,138 +9,145 @@
     crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
   <script src="assets/javascript/app.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/recipecard.css">
-  
+
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                          
-      </button>
-      <a class="navbar-brand" href="#">WhozHungry</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WhozHungry</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="about-us.html">About</a>
+          </li>
+          <li>
+            <a href="contact-us.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">
+              <span class="glyphicon glyphicon-log-in"></span> Log out</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home</a></li>
-        <li><a href="about-us.html">About</a></li>
-        <li><a href="contact-us.html">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 col-lg-2 sidenav">
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 col-lg-2 sidenav">
         <ul class="nav nav-pills nav-stacked">
-            <li class="active">
-              <a href="donations.html">Donations</a>
-            </li>
-            <li>
-              <a href="recipesearch.html">Use What You Got</a>
-            </li>
-            <li>
-              <a href="pickup.html">Pick UP</a>
-            </li>
-            <li>
-              <a href="community.html">Community</a>
-            </li>
-          </ul>
-          <br>
-    </div>
-    <div class="col-sm-8 text-left"> 
+          <li class="active">
+            <a href="donations.html">Donations</a>
+          </li>
+          <li>
+            <a href="recipesearch.html">Use What You Got</a>
+          </li>
+          <li>
+            <a href="pickup.html">Pick UP</a>
+          </li>
+          <li>
+            <a href="community.html">Community</a>
+          </li>
+        </ul>
+        <br>
+      </div>
+      <div class="col-sm-8 text-left">
         <div id="recipeSearch">
-      <h1>Recipesearch</h1>
-      
-      <div class="container">
-          <div class="row">
-                <div class="col-xs-9">
+          <h1>Recipesearch</h1>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-9">
                 <div class="form-group">
-                    
-                    <label for="add-ingredient">Add Ingredient:</label>
-                    
-                    <input type="text" class="form-control" id="add-ingredient">
-                    
-                    </div>
-                  </div>
-                  <div class="col-xs-3">
-                    <button type="button" class="btn btn-primary" id="add-ingredients">Add</button>
-                  </div>
+
+                  <label for="add-ingredient">Add Ingredient:</label>
+
+                  <input type="text" class="form-control" id="add-ingredient">
+
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <button type="button" class="btn btn-primary" id="add-ingredients">Add</button>
+              </div>
 
 
-          </div>
-          <div class="row">
+            </div>
+            <div class="row">
               <div class="well">
-                    <table class="table table-hover" id="itemList-table">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Ingredients List</th>
-                                <th scope="col">Delete</th>
-                              </tr>
-                            </thead>
-                            <tbody id="ingredients-tbody">
-                                                          
-                            </tbody>
-                          </table>
+                <table class="table table-hover" id="itemList-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Ingredients List</th>
+                      <th scope="col">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ingredients-tbody">
+
+                  </tbody>
+                </table>
 
               </div>
 
-          </div>
-          <div class="row">
-                <div class="col-md-12">
+            </div>
+            <div class="row">
+              <div class="col-md-12">
 
                 <button type="button" class="btn btn-primary" id="search-recipe">Search Recipe</button>
                 <button type="button" class="btn btn-primary" id="clear-recipe">clear</button>
-                </div>
+              </div>
 
 
+            </div>
+            <div class="row">
+
+              <div id="recipeList">
+
+              </div>
+            </div>
           </div>
-          <div class="row">
-                
-                    <div id="recipeList">
-                        
-                    </div>
 
-          </div>
-
-
-
+        </div>
       </div>
-      
-    </div>
-</div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
+      <div class="col-sm-2 sidenav">
+        <div class="well">
+          <p>ADS</p>
+        </div>
+        <div class="well">
+          <p>ADS</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<footer class="container-fluid text-center">
+  <footer class="container-fluid text-center">
     <p>© Vidya, Josh & Wylder "TEAM AWESOME"</p>
-</footer>
-<!-- <footer class="footer">
+  </footer>
+  <!-- <footer class="footer">
     <div class="container">
       <span> FooterText</span>
     </div>
 </footer> -->
-<script src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>

@@ -26,13 +26,19 @@ $("#search-recipe").on("click", function (event) {
  
 
   var queryURL = "https://api.edamam.com/search?q="+itemList+"&app_id=" + applicationID + "&app_key=" + API_Key + "&from=0&to=6";
-  console.log(queryURL)
+  console.log(queryURL);
+  /***********cors problem fix***************/
+  $.ajaxPrefilter(function(options) {
+    if (options.crossDomain && $.support.cors) {
+        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+    }
+  }); 
   $.ajax({
     url: queryURL,
     method: "GET"
   }).done(function (result) {
     console.log(result);
-     $("#recipeList").empty();
+    $("#recipeList").empty();
     
     for (var i = 0; i < result.hits.length; i++) {
       
