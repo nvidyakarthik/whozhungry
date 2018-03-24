@@ -1,4 +1,6 @@
 
+
+//  animating buttons to shake
 $(".icon glass").hover(function(){
     $(this).css("animated, shake");
 }
