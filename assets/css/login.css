@@ -5,7 +5,10 @@ body {
     background-size: cover;
     background-repeat: repeat;
     
+    
   }
+  
+
   .main {
     max-width: 320px;
     margin: 0 auto;
