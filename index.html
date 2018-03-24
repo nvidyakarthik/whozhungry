@@ -9,7 +9,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD_p_80vQAC85hnttvurL1tDF9cR2cSCzA",
+    authDomain: "whozhungry-e0979.firebaseapp.com",
+    databaseURL: "https://whozhungry-e0979.firebaseio.com",
+    projectId: "whozhungry-e0979",
+    storageBucket: "whozhungry-e0979.appspot.com",
+    messagingSenderId: "235118731232"
+  };
+  firebase.initializeApp(config);
+</script>
+  
    <link href="assets/css/login.css" rel="stylesheet">
    
 
@@ -34,7 +47,7 @@
             <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>
           </div>
           <div class="col-xs-6 col-sm-6 col-md-6">
-            <button class="btn btn-lg btn-info btn-block" onclick="signIn()">Google</button>
+            <button class="btn btn-lg btn-info btn-block" id="google-signIn">Google</button>
           </div>
         </div>
         <div class="login-or">
@@ -56,7 +69,7 @@
             <label>
               <input type="checkbox" id = "rememberMe"> Remember me </label>
           </div>
-          <button type="submit" class="btn btn btn-primary" onclick="login()">
+          <button type="submit" class="btn btn btn-primary" id="user-login">
             Log In
           </button>
         </form>
@@ -65,10 +78,11 @@
 
     </div>
   </div>
-
-
+ 
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="assets/javascript/app.js"></script>
+  
+  
+  <script src="assets/javascript/login.js"></script>
   <script src='https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js'></script>
 
 </body>
