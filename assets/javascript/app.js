@@ -67,7 +67,7 @@ $("#search-recipe").on("click", function (event) {
 
 $("#recipeList").on("click","#view-recipe", function (event) {
   var recipeUrl=$(this).attr("data-url");
-  alert("recipe button");
+  
   window.open(recipeUrl);
 
 });
