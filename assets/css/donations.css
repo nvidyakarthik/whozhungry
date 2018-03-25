@@ -35,7 +35,7 @@ h5 {
 #postDonations-List .card-img-top {
     display: block;
     width: 100%;
-    height: auto;
+    height: 235px;
 }
 
 #postDonations-List .card-title {
@@ -86,8 +86,8 @@ h5 {
 }
 #horizontalcard{
     max-width: 775px;
-    float: left;
     margin: 20px;
+    border: 2px solid #f5f5f5;
 }
 #horizontalcard img{
     height:263px;
