@@ -27,7 +27,7 @@ database.ref("/Donations").on("child_added", function (childSnapshot) {
 
   cardDiv.append(imageDiv).append(cardBlockDiv).append(cardFooterDiv);
 
-  $("#postDonations-List").append(cardDiv);
+  $("#postDonations-List").prepend(cardDiv);
 
 
   /*  console.log("recipe label:" + result.hits[i].recipe.label);
@@ -51,10 +51,11 @@ $("#postDonations-List").on('click', "#detailView", function (event) {
       "<div class='card-block px-3'>" +
       "<h4 class='card-title'>" + childSnapshot.val().title + "</h4>" +
       "<p class='card-text'>" + childSnapshot.val().message + "</p>" +
-      "<p class='card-text'><span>" + childSnapshot.val().expirateDate + "</span><span>City</span></p>" +
+      "<p class='card-text'><span id='expdate'>Expiration Date :" + childSnapshot.val().expirateDate +
+       "</span><span id='city'>"+childSnapshot.val().city+"</span></p>" +
 
-      "<a href='#' class='btn btn-primary'>Send Message</a><div></div></div></div>";
-    $("#detailViewCard").append(divobj);
+      "<a href='#' class='btn btn-primary' type='submit' id='sendMessage'>Send Message</a><div></div></div></div>";
+    $("#detailViewCard").prepend(divobj);
   });
 
 });
