@@ -42,6 +42,9 @@ $("#postDonations-List").on('click', "#detailView", function (event) {
   var childkey = $(this).attr("data-key");
 
   database.ref("/Donations").child(childkey).once("value", function (childSnapshot) {
+    
+    var postedDate=moment(moment(childSnapshot.val().dateAdded).format("YYYYMMDD"), "YYYYMMDD").fromNow();
+    console.log(postedDate);
     var divobj = "<div class='card' id='horizontalcard'>" +
       "<div class='row'>" +
       "<div class='col-md-4'>" +
@@ -51,10 +54,11 @@ $("#postDonations-List").on('click', "#detailView", function (event) {
       "<div class='card-block px-3'>" +
       "<h4 class='card-title'>" + childSnapshot.val().title + "</h4>" +
       "<p class='card-text'>" + childSnapshot.val().message + "</p>" +
-      "<p class='card-text'><span id='expdate'>Expiration Date :" + childSnapshot.val().expirateDate +
-       "</span><span id='city'>"+childSnapshot.val().city+"</span></p>" +
+      "<p class='card-text'><span id='expdate'>Expiration Date : " + childSnapshot.val().expirateDate +
+      "</span><span id='postdate'>Posted Date : " + postedDate +
+       "</span><div id='city'>City : "+childSnapshot.val().city+"</div></p>" +
 
-      "<a href='#' class='btn btn-primary' type='submit' id='sendMessage'>Send Message</a><div></div></div></div>";
+      "<button class='btn btn-success' type='submit' id='sendMessage'>Send Message</button><div></div></div></div>";
     $("#detailViewCard").prepend(divobj);
   });
 

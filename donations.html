@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
@@ -45,23 +45,26 @@
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" id="logout"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+          <li>
+            <a href="#" id="logout">
+              <span class="glyphicon glyphicon-log-in"></span> Log out</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="jumbotron" class="text-center">
-      <h1 class="display-3" >WhozHungry</h1>
-      <p class="lead">Don't throw it out.Throw it in.</p>
-      
+    <h1 class="display-3">WhozHungry</h1>
+    <p class="lead">Don't throw it out.Throw it in.</p>
+
   </div>
 
   <div class="container-fluid text-center">
     <div class="row content">
       <div class="col-sm-2 sidenav">
         <ul class="nav nav-pills nav-stacked">
-          <li class="active">
-            <a href="donations.html">Donations</a>
+          <li>
+            <a href="donations.html" class="btn btn-success">Donations</a>
           </li>
           <li>
             <a href="recipesearch.html">Use What You Got</a>
@@ -77,40 +80,17 @@
       </div>
       <div class="col-sm-8 text-left">
         <div id="content">
+
           <h1>
-            <span>Donations</span>
-            <span>
-              <button type="submit" id="add-donations" class="btn btn-primary" data-toggle="modal" data-target="#myModalHorizontal">Post an Item</button>
+            <span id="postDonations">Donations</span>
+            <span id="postBtn">
+              <button type="submit" id="add-donations" class="btn btn-success" data-toggle="modal" data-target="#myModalHorizontal">Post an Item</button>
             </span>
           </h1>
 
           <div id="detailViewCard">
-        <!--  <div class="container py-3" id="horizontalcard">
-              <div class="card">
-                <div class="row ">
-                  <div class="col-md-4">
-                      <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=200&h=200" class="w-100">
-                    </div>
-                    <div class="col-md-8 px-3">
-                      <div class="card-block px-3">
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <p class="card-text"><span>ExpirationDate</span><span>City</span></p>
-                        
-                        <a href="#" class="btn btn-primary">Send Message</a>
-                      </div>
-                    </div>
-          
-                  </div>
-                </div>
-              </div>-->
-              </div> 
 
-
-
-
-
-
+          </div>
           <div id="postDonations-List">
 
           </div>
@@ -197,10 +177,10 @@
 
         <!-- Modal Footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">
             Close
           </button>
-          <button type="button" class="btn btn-primary" type="submit" id="add-donations">
+          <button type="button" class="btn btn-success" type="submit" id="add-donations">
             Save changes
           </button>
         </div>
@@ -210,7 +190,7 @@
 
 
 
-  
+
   <script src='https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js'></script>
   <script src="assets/javascript/postDonations.js"></script>
 
