@@ -55,3 +55,11 @@ font-size: 20px;
 #signUp{
 color: black;
 }
+/**login error message***/
+div#errorMessage {
+  color: red;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 20px;
+  
+}
