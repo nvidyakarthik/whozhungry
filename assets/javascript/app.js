@@ -35,7 +35,18 @@ $("#search-recipe").on("click", function (event) {
   }); 
   $.ajax({
     url: queryURL,
-    method: "GET"
+    method: "GET",
+    error: function(jqXHR, textStatus, errorThrown) {
+      
+
+      $('#recipeSearchError').html('<p>No results Found.Please Enter the ingredient name correctly.</p>');
+      console.log('jqXHR:');
+      console.log(jqXHR);
+      console.log('textStatus:');
+      console.log(textStatus);
+      console.log('errorThrown:');
+      console.log(errorThrown);
+  }
   }).done(function (result) {
     console.log(result);
     $("#recipeList").empty();
@@ -49,7 +60,7 @@ $("#search-recipe").on("click", function (event) {
       var cardTitleDiv=$("<h4 class='card-title'>"+result.hits[i].recipe.label+"</h4>");
       cardBlockDiv.append(cardTitleDiv);
       var cardFooterDiv=$("<div class='card-footer'>");
-      var buttonDiv=$("<button class='btn btn-info btn-sm' id='view-recipe' data-url='"+result.hits[i].recipe.url+"'>View Recipe</button>");
+      var buttonDiv=$("<button class='btn btn-success btn-sm' id='view-recipe' data-url='"+result.hits[i].recipe.url+"'>View Recipe</button>");
       cardFooterDiv.append(buttonDiv);
       
       cardDiv.append(imageDiv).append(cardBlockDiv).append(cardFooterDiv);
@@ -82,18 +93,18 @@ $("#clear-recipe").on("click", function (event) {
 $("#add-ingredients").on("click", function (event) {
 
   var itemName = $("#add-ingredient").val().trim();
-  itemList.push(itemName);
-  var tableRow = $("<tr>");
-  var cell1 = $("<td>").append(rowCount++);
-  var cell2 = $("<td>").append(itemName);
-  var cell3 = $("<td>").append("<button type='button' class='btn btn-default btn-sm' id='delete-ingredient' data-name='" + itemName + "'>"
-    + "<span class='glyphicon glyphicon-trash'>"
-    + "</span> Delete</button>");
-  tableRow.append(cell1).append(cell2).append(cell3);
-  $("#ingredients-tbody").append(tableRow);
-  $("#add-ingredient").val("");
-  
-
+  if (itemName != "") {
+    itemList.push(itemName);
+    var tableRow = $("<tr>");
+    var cell1 = $("<td>").append(rowCount++);
+    var cell2 = $("<td>").append(itemName);
+    var cell3 = $("<td>").append("<button type='button' class='btn btn-default btn-sm' id='delete-ingredient' data-name='" + itemName + "'>"
+      + "<span class='glyphicon glyphicon-trash'>"
+      + "</span> Delete</button>");
+    tableRow.append(cell1).append(cell2).append(cell3);
+    $("#ingredients-tbody").append(tableRow);
+    $("#add-ingredient").val("");
+  }
 
 });
 
