@@ -125,3 +125,9 @@ div#addIngredients {
     margin-left: -26px;
     margin-top: 24px;
 }
+
+#recipeSearch .well {
+    margin-left: 14px;
+    max-width:75%;
+}
+
