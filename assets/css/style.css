@@ -137,16 +137,16 @@
     }
   }
 */
- /* .glass{
-	/* background styles */
+  /*.glass{*/
+	/* background styles 
 	position: relative;
 	display: inline-block;
 	padding: 10px 15px;
 	background-color: green; /*for compatibility with older browsers*/
-	background-image: linear-gradient(blue, silver);
+	/*background-image: linear-gradient(blue, silver);*/
 
 	/* text styles */
-	text-decoration: none;
+	/*text-decoration: none;
 	color: black;
 	font-size: 15px;
 	font-family: sans-serif;
@@ -167,6 +167,6 @@
     color: #EEE;
     text-shadow: 4px 4px 1px #300000,
     4px 6px 1px #400000, 4px 8px 1px #500000; /*......and so on, until 4px 60px 5px #FF0000; */
-    font-size: 25px;
+   /* font-size: 25px;
 }*/
  
