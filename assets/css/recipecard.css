@@ -115,3 +115,13 @@ h5 {
 .meta a:hover {
     color: rgba(0, 0, 0, .87);
 }
+
+div#content {
+    padding: 20px;
+    
+}
+
+div#addIngredients {
+    margin-left: -26px;
+    margin-top: 24px;
+}
