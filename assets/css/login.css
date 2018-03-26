@@ -63,4 +63,8 @@ div#errorMessage {
   padding-top: 20px;
   
 }
-    
+/*****Google sign in button height********/
+img#gSignInBtn {
+  height: 45px;
+  width: 158px;
+}
