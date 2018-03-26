@@ -1,3 +1,4 @@
+
 #recipeSearch .container {
     max-width: 925px;
 }
@@ -10,6 +11,7 @@
     padding-bottom: 1400px;
 }
 /**************************************************************/
+
 
  /* Remove the navbar's default margin-bottom and rounded borders */ 
  .navbar {
@@ -92,8 +94,79 @@
 
 }
 
+/*#addButton{
+    float: left;
+}
 
+.navbar{
+    background: linear-gradient(black);
+}
+.panel-heading{
+    background-color: black;
+}
 
+.fontChange{
+    font-size: 35px;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    color:blue;
+}*/
 
+/*.shake:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
     
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+*/
+ /* .glass{
+	/* background styles */
+	position: relative;
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: green; /*for compatibility with older browsers*/
+	background-image: linear-gradient(blue, silver);
 
+	/* text styles */
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+  .glass:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.drip {
+    color: #EEE;
+    text-shadow: 4px 4px 1px #300000,
+    4px 6px 1px #400000, 4px 8px 1px #500000; /*......and so on, until 4px 60px 5px #FF0000; */
+    font-size: 25px;
+}*/
+ 
