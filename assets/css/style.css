@@ -46,6 +46,7 @@
       padding: 15px;
     }
     .row.content {height:auto;} 
+        
   }
 /**************homepage style****************/
   .firstcharacter {
@@ -94,6 +95,14 @@
 
 }
 
+/* #contactForm {
+  margin-left: 185px;
+  margin-right: 185px;
+} */
+p#about {
+  font-size: 17px;
+  padding-top: 33px;
+}
 /*#addButton{
     float: left;
 }

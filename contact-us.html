@@ -44,49 +44,67 @@
     <p class="lead">Don't throw it out.Throw it in.</p>
     
 </div>  
-<div class="container-fluid text-center">    
+<div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <ul class="nav nav-pills nav-stacked">
-        <li><a href="donations.html">Donations</a></li>
-        <li><a href="recipesearch.html">Use What You Got</a></li>
-        <li><a href="pickup.html">Pick UP</a></li>
-        <li><a href="community.html">Community</a></li>
-      </ul><br>
+        <li>
+          <a href="donations.html">Donations</a>
+        </li>
+        <li>
+          <a href="recipesearch.html">Use What You Got</a>
+        </li>
+        <li>
+          <a href="pickup.html">Pick UP</a>
+        </li>
+        <li>
+          <a href="community.html">Community</a>
+        </li>
+      </ul>
+      <br>
     </div>
     <div class="col-sm-8 text-left">
-            <div id="content">
-                <div class="row">
-                    <br>
-                    <br>
-                    <p id="about">
-                        <span class="firstcharacter2">P</span>lease feel free to contact us with any questions or concerns you have about this app
-                        or just to tell us how completely AWESOME you think this app is.
-                    </p>
-                    <br>
-                    <br>
-                    <form id = "contactForm">
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Name</label>
-                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="First, Last">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Questions/Comments</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                        </div>
-                        <button class="btn btn-success">
-                            <strong>Submit</strong>
-                        </button>
-                    </form>
+      <p id="about">
+        <span class="firstcharacter2">P</span>lease feel free to contact us with any questions or concerns you have about this app or just to tell us how
+        completely AWESOME you think this app is.
+      </p>
+      <div class="container">
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-sm-6 col-md-6" id="contactForm">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2>Contact</h2>
+              </div>
+              <div class="panel-body">
+                <div id="contact">
+                  <form action="" method="post" enctype="text/plain">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Name</label>
+                      <input type="text" class="form-control" name="name" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email</label>
+                      <input type="email" class="form-control" name="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Message</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success mb-2" value="submit">Submit</button>
 
+                  </form>
                 </div>
-
+              </div>
             </div>
+
+          </div>
+
         </div>
+
+      </div>
+    </div>
 
     <div class="col-sm-2 sidenav">
       <div class="well">
@@ -98,6 +116,7 @@
     </div>
   </div>
 </div>
+  
 
 <footer class="container-fluid text-center">
   <p>© Vidya, Josh & Wylder "TEAM AWESOME"</p>
