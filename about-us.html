@@ -2,125 +2,96 @@
 <html lang="en">
 
 <head>
-    <title>Donations</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/layout.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="assets/javascript/cssjava.js"></script>
-    <style>
-    </style>
+  <title>WhozHungry-AboutUs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Need this tag for logout -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>  
+  <script src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/login.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Logo</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">
-                            <span class="glyphicon glyphicon-log-in"></span> Log out</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container-fluid text-center" style="background: linear-gradient(#ff7A00, tan)">
-        <div class="row content">
-            <div class="col-sm-2 sidenav">
-                <p>
-                    <a href="donations.html" class="icon glass">
-                        <strong>Donations</strong>
-                    </a>
-                </p>
-                <p>
-                    <a href="recipesearch.html" id="recipes" class="icon glass">
-                        <strong>Recipes</strong>
-                    </a>
-                </p>
-                <p>
-                    <a href="pickup.html" id="pickUp" class="icon glass">
-                        <strong>Pick UP</strong>
-                    </a>
-                </p>
-                <p>
-                    <a href="community.html" id="community" class="icon glass">
-                        <strong>Community</strong>
-                    </a>
-                </p>
-            </div>
-            <div class="col-sm-8 text-left">
-                <div id="content">
-                    <div class="row">
-                        <br>
-                        <br>
-                        <p id="about">
-                            <span class="firstcharacter">W</span>e are a recycling program of sorts where you can get rid of your soon to be expired and
-                            unused food by posting "sale like" ads and giving people an oportunity to come pick it up free
-                            of charge. some other options we offer instead of people driving to your place to get the food,
-                            you can check out our donation locations page and find the closest food bank or non-profit location
-                            for you to drop off your goods. If donating was not something you had in mind then FEAR NOT!
-                            we also have a page where you can type in the ingredients you have left and we will show you
-                            all the recipes you can make that contain your leftover ingredients! One final option we have
-                            is a community event board where one can post upcoming events such as; "Boy Scout/Girl Scout
-                            fundraisers or food drives" or "Church canned goods drive" exc.. exc..
-                        </p>
-                        <p>
-                            <h1 id="cool">
-                                <strong>I KNOW, COOL RIGHT!</strong>
-                            </h1>
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-sm-2 sidenav">
-                <div class="well">
-                    <p>ADS</p>
-                </div>
-                <div class="well">
-                    <p>ADS</p>
-                </div>
-            </div>
-        </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                          
+      </button>
+      <a class="navbar-brand" href="#">WhozHungry</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">Home</a></li>
+        <li class="active"><a href="about-us.html">About</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="logout"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron" class="text-center">
+    <h1 class="display-3" >WhozHungry</h1>
+    <p class="lead">Don't throw it out.Throw it in.</p>
+    
+</div>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="recipesearch.html">Use What You Got</a></li>
+        <li><a href="pickup.html">Pick UP</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul><br>
+    </div>
+    <div class="col-sm-8 text-left"> 
+        <div id="content">
+      <h1>A</h1>
+      <p id="description"><span class="firstcharacter">W</span>e are a recycling program of sorts where you can get rid of your soon to be expired and
+        unused food by posting "sale like" ads and giving people an oportunity to come pick it up free
+        of charge. some other options we offer instead of people driving to your place to get the food,
+        you can check out our donation locations page and find the closest food bank or non-profit location
+        for you to drop off your goods. If donating was not something you had in mind then FEAR NOT!
+        we also have a page where you can type in the ingredients you have left and we will show you
+        all the recipes you can make that contain your leftover ingredients! One final option we have
+        is a community event board where one can post upcoming events such as; "Boy Scout/Girl Scout
+        fundraisers or food drives" or "Church canned goods drive" exc.. exc..</p>
+      <hr>
+      
+    </div>
+</div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <footer class="container-fluid text-center">
-        <p>© Vidya, Josh & Wylder "TEAM AWESOME"</p>
-    </footer>
+<footer class="container-fluid text-center">
+  <p>© Vidya, Josh & Wylder "TEAM AWESOME"</p>
+</footer>
+<!-- <footer class="footer">
+    <div class="container">
+      <span> FooterText</span>
+    </div>
+</footer> -->
 
-
-
-
-
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 </body>
-
 </html>
+

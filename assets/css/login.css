@@ -1,60 +1,66 @@
 body {
-    padding-top: 15px;
-    font-size: 12px;
-    background-image: url("../images/fruitBackground.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    
-    
-  }
+  padding-top: 15px;
+  font-size: 12px;
+  background-image: url("../images/fruitBackground.jpg");
+  background-size: cover;
+  background-repeat: repeat;
   
+}
+.main {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.login-or {
+  position: relative;
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+  
+}
+.hr-or {
+  background-color: #cdcdcd;
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+h3 {
+  text-align: center;
+  line-height: 300%;
+  color: black;
+}
 
-  .main {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-  .login-or {
-    position: relative;
-    font-size: 18px;
-    color: #aaa;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .span-or {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: -2px;
-    margin-left: -25px;
-    background-color: #fff;
-    width: 50px;
-    text-align: center;
-    
-  }
-  .hr-or {
-    background-color: #cdcdcd;
-    height: 1px;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-  }
-  h3 {
-    text-align: center;
-    line-height: 300%;
-    color: black;
-  }
-
-  #title{
-    text-align: center;
-    
-  }
+#title{
+  text-align: center;
+  
+}
 #username, #forgotPassword, #password,
 #rememberMe{
-  color: black;
-  font-size: 20px;
-  
+color: black;
+font-size: 20px;
+
 }
 #signUp{
-  color: black;
+color: black;
 }
+/**login error message***/
+div#errorMessage {
+  color: red;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 20px;
+  
+}
+    
