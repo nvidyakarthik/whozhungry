@@ -100,7 +100,7 @@ then(function(user){
 });
 });
 
-firebase.auth().onAuthStateChanged(function(user) {
+ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     //alert("signedin");
@@ -114,7 +114,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     //alert("signedout");
     console.log("usersignedout");
   }
-});
+}); 
 $(document).ready(function() {
   $("#logout").on("click", function () {
   
