@@ -12,8 +12,11 @@
   <script src="assets/javascript/app.js"></script>
   <script src="assets/javascript/googlemap.js"></script>
   <!-- Replace the value of the key parameter with your own API key. -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9jYJeY6EXEn3LjSUZK0MqywB2Qvuxm3k&libraries=places&callback=initMap" async defer></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9jYJeY6EXEn3LjSUZK0MqywB2Qvuxm3k&libraries=places&callback=initMap" async defer></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9jYJeY6EXEn3LjSUZK0MqywB2Qvuxm3k&libraries=places&callback=initAutocomplete"
+         async defer></script>
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/map.css">
   
 </head>
 
@@ -68,10 +71,14 @@
       </div>
       <div class="col-sm-8 text-left">
         <div id="content">
-          <h1>Pick Up</h1>
+          <h3>Search to Drop your Food Donations</h3>
+          <div id="mapsearch">
+              <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+              <div id="map"></div>
           
+          </div>
 
-          <div id="map"></div>
+          
 
         </div>
       </div>
@@ -169,8 +176,8 @@
 
 
 
-  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-  <script src="assets/javascript/postDonations.js"></script>
+ 
+  
 </body>
 
 </html>
