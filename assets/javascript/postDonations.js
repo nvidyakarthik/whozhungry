@@ -28,6 +28,7 @@ database.ref("/Donations").on("child_added", function (childSnapshot) {
   cardDiv.append(imageDiv).append(cardBlockDiv).append(cardFooterDiv);
 
   $("#postDonations-List").prepend(cardDiv);
+  increaseSideDivHeight();
 
 
   /*  console.log("recipe label:" + result.hits[i].recipe.label);
@@ -35,7 +36,7 @@ database.ref("/Donations").on("child_added", function (childSnapshot) {
    console.log("recipe url:" + result.hits[i].recipe.url);  */
 
 });
-
+//Detail view of donated item
 $("#postDonations-List").on('click', "#detailView", function (event) {
 
   $("#detailViewCard").empty();
@@ -45,10 +46,11 @@ $("#postDonations-List").on('click', "#detailView", function (event) {
     
     var postedDate=moment(moment(childSnapshot.val().dateAdded).format("YYYYMMDD"), "YYYYMMDD").fromNow();
     console.log(postedDate);
+    console.log("Image url:"+childSnapshot.val().imageUrl);
     var divobj = "<div class='card' id='horizontalcard'>" +
       "<div class='row'>" +
       "<div class='col-md-4'>" +
-      "<img src='" + childSnapshot.val().imageUrl + " class='w-100'></div>" +
+      "<img src='" + childSnapshot.val().imageUrl + "'  class='w-100'></div>" +
 
       "<div class='col-md-8 px-3'>" +
       "<div class='card-block px-3'>" +
@@ -69,6 +71,7 @@ $("#myModalHorizontal").on("click", "#add-donations", function (event) {
   var addtitle = $("#title").val().trim();
   var addMessage = $("#message").val().trim();
   var addCity = $("#city").val().trim();
+  console.log("City :"+addCity);
   var addZipCode = $("#zipCode").val().trim();
   var addExpirationDate = $("#expirationDate").val().trim();
   const file = document.querySelector('#donation-image').files[0];
