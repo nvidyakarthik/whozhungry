@@ -5,6 +5,6 @@ Most of the people buy grocery items in bulk and end up throwing some of the ite
 <h3>Team members</h3>
 Vidya Nirmal,Joshua Hareer,Wylder Gehre
 
-Link to website:https://nvidyakarthik.github.io/WhozHungry
+Link to website:https://nvidyakarthik.github.io/whozhungry
 
 
