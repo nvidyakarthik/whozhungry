@@ -1,10 +1,15 @@
 # whozhungry
-<h3>Project Description</h3>
-Most of the people buy grocery items in bulk and end up throwing some of the items that they are not able to consume in trash. Whozhungry is a website to post your unwanted grocery items or soon to be expiring grocery items and let your neighborhood community know that you have some items that you are ready to donate it to.
 
-<h3>Team members</h3>
-Vidya Nirmal,Joshua Hareer,Wylder Gehre
+* Whozhungry is a website to post your unwanted grocery items or soon to be expiring grocery items and let your neighborhood community know that you have some items that you are ready to donate it to.
+* Developed using HTML5, CSS3,Bootstrap,Jquery and Javascript
+* Used firebase for google login,customizied login,Image storage and data storage.
+* Used Google Maps API and recipe Search API for this Project.
 
-Link to website:https://nvidyakarthik.github.io/whozhungry
+### Team members
+* Vidya Nirmal
+* Joshua Hareer
+* Wylder Gehre
+
+Link to website: https://nvidyakarthik.github.io/whozhungry
 
 
