@@ -5,6 +5,8 @@
 * Used firebase for google login,customizied login,Image storage and data storage.
 * Used Google Maps API and recipe Search API for this Project.
 
+![WhozHungry](https://github.com/nvidyakarthik/whozhungry/blob/master/assets/images/WhoZHungry.png)
+
 ### Team members
 * Vidya Nirmal
 * Joshua Hareer
